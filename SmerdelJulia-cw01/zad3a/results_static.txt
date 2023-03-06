@@ -8,7 +8,7 @@ real time: 0.0100000000
 user time: 0.0000000000
 core time: 0.0000000000
 Count operation:
-number of words in file: 308
+number of words in file: 425
 real time: 0.0100000000
 user time: 0.0000000000
 core time: 0.0100000000
@@ -39,12 +39,12 @@ user time: 0.0000000000
 core time: 0.0000000000
 Count operation:
 number of words in file: 19999
-real time: 0.0100000000
+real time: 0.0000000000
 user time: 0.0000000000
 core time: 0.0000000000
 Count operation:
 number of words in file: 19999
-real time: 0.0000000000
+real time: 0.0100000000
 user time: 0.0000000000
 core time: 0.0000000000
 Count operation:
@@ -75,15 +75,20 @@ core time: 0.0000000000
 Count operation:
 number of words in file: 19999
 real time: 0.0100000000
+user time: 0.0000000000
+core time: 0.0000000000
+Count operation:
+number of words in file: 19999
+real time: 0.0000000000
 user time: 0.0100000000
+core time: 0.0000000000
+Count operation:
+number of words in file: 19999
+real time: 0.0000000000
+user time: 0.0000000000
 core time: 0.0100000000
 Count operation:
 number of words in file: 19999
-real time: 0.0000000000
-user time: 0.0000000000
-core time: 0.0000000000
-Count operation:
-number of words in file: 19999
 real time: 0.0100000000
 user time: 0.0000000000
 core time: 0.0000000000
@@ -95,11 +100,6 @@ core time: 0.0000000000
 Count operation:
 number of words in file: 19999
 real time: 0.0100000000
-user time: 0.0000000000
-core time: 0.0000000000
-Count operation:
-number of words in file: 19999
-real time: 0.0000000000
 user time: 0.0000000000
 core time: 0.0000000000
 Show operation:
@@ -142,14 +142,14 @@ real time: 0.0000000000
 user time: 0.0000000000
 core time: 0.0000000000
 DeleteAll operation:
-real time: 25.6900000000
+real time: 25.7500000000
 user time: 0.0000000000
 core time: 0.0000000000
 Destroy operation:
-real time: 0.1900000000
+real time: 0.2200000000
 user time: 0.0000000000
 core time: 0.0000000000
 Full runtime of programm:
-real time: 25.9900000000
+real time: 26.0800000000
 user time: 0.0200000000
 core time: 0.0400000000

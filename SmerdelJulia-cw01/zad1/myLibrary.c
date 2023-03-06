@@ -26,6 +26,8 @@ pointerTable * createPointerTable(int size){
     return table;
 }
 
+
+//I'm saving words to the table (I might misunderstood the command). To save the information given by "wc" command -> commented part
 void fillPointerTable(pointerTable *table, char filename[])
 {
 
@@ -79,6 +81,36 @@ void fillPointerTable(pointerTable *table, char filename[])
     }
 
     fclose(f2);
+
+
+    
+    //To save the information given by the "wc" command (numLines, numWords, numBytes)
+    // FILE *f;
+    // int numWords, numLines, numBytes;
+    // f = fopen("/tmp/tempFile.txt", "r");
+
+
+    // if (3 > table->maxSize - table->currSize)
+    // {
+    //     fprintf(stderr, "There is no enough free space in table");
+    //     exit(3);
+    // }
+
+    // char data[MAX_WORD_LENGTH];
+
+    // f = fopen("/tmp/tempFile.txt", "r");
+    // int iter = 0;
+    // while (fscanf(f, "%s", data) == 1 && iter < 3)
+    // {
+    //     table->table[table->currSize] = malloc((strlen(data) + 1) * sizeof(char));
+    //     strcpy(table->table[table->currSize], data);
+    //     table->currSize++;
+    //     iter++;
+    // }
+
+    // fclose(f);
+    // remove("/tmp/tempFile.txt");
+ 
 }
 
 char *contentOnIndex(pointerTable *table, int index)
@@ -121,3 +153,4 @@ void deleteAll(pointerTable *table)
         free(table->table);
     }
 }
+
