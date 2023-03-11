@@ -1,0 +1,8 @@
+One at time
+real time: 0.0000000000
+user time: 0.0000000000
+core time: 0.0000000000
+1024 at time
+real time: 0.0000000000
+user time: 0.0000000000
+core time: 0.0000000000

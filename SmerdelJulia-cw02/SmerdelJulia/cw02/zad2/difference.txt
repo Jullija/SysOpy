@@ -1,0 +1,1 @@
+Files result_more and result_one are identical

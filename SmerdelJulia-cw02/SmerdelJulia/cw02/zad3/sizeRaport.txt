@@ -1,0 +1,5 @@
+sizeRaport.txt, 0
+Makefile, 111
+main.c, 880
+main, 9232
+Summary size of files: 10223 bytes
