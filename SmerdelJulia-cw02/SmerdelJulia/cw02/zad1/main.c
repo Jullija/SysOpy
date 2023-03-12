@@ -163,7 +163,7 @@ int main(int argc, char ** argv){
     int filesize2 = getFileSizeSys(inputFile2);
 
     char* buffer2 = malloc(filesize2 + sizeof(char));
-    read(inputFile2, buffer2, filesize2); //red from inputFile to buffer
+    read(inputFile2, buffer2, filesize2); //read from inputFile to buffer
     buffer2[filesize2] = '\0';
 
     char* changedText2 = malloc(filesize2 + sizeof(char));

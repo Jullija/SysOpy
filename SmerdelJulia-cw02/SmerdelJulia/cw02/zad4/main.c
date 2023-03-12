@@ -25,6 +25,11 @@ int HokusPokus(const char *fpath, const struct stat *sb, int typeflag){
 
 int main(int argc, char ** argv){
 
+    if (argc != 1){
+        printf("Wrong number of arguments");
+        exit(-1);
+    }
+
 
     if (ftw(argv[1], HokusPokus, 10) == -1){
         perror("ftw");

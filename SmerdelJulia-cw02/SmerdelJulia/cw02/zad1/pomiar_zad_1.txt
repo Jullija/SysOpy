@@ -1,0 +1,8 @@
+Lib functions
+real time: 0.0000000000
+user time: 0.0000000000
+core time: 0.0000000000
+Sys functions
+real time: 0.0000000000
+user time: 0.0000000000
+core time: 0.0000000000
