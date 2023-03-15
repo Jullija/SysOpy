@@ -1,0 +1,21 @@
+Empty directory
+Program name: ./main
+
+Couple files directory
+Program name: ./mainItsNotRick.jpg
+ThatsNotRickToo.jpg
+rickAstley.txt
+
+
+A lot of files directory
+Program name: ./main1never.txt
+2gonna.txt
+3give.txt
+4you.txt
+5.up.txt
+6never.txt
+7gonna.txt
+8say.txt
+9goodbye.txt
+NotYet.jpg
+StillNotRick.jpg

@@ -1,0 +1,21 @@
+MAKE 10 CHILDREN
+Parent PID: 19072, child PID: 19081
+Parent PID: 19072, child PID: 19082
+Parent PID: 19072, child PID: 19080
+Parent PID: 19072, child PID: 19079
+Parent PID: 19072, child PID: 19078
+Parent PID: 19072, child PID: 19077
+Parent PID: 19072, child PID: 19074
+Parent PID: 19072, child PID: 19076
+Parent PID: 19072, child PID: 19075
+Parent PID: 19072, child PID: 19073
+argv[i]: 10
+
+MAKE 5 CHILDREN
+Parent PID: 19085, child PID: 19090
+Parent PID: 19085, child PID: 19088
+Parent PID: 19085, child PID: 19087
+Parent PID: 19085, child PID: 19089
+Parent PID: 19085, child PID: 19086
+argv[i]: 5
+
