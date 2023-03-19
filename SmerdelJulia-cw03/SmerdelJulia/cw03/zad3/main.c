@@ -11,17 +11,20 @@
 
 
 void showMeWhatYouGot(char* path, char* text){
+
     DIR* dir;
     struct dirent* entry;
     struct stat sb;
 
-    if ((dir = opendir(path)) == NULL){
+    dir = opendir(path); //opening directory
+    if (dir == NULL){
         perror("opendir");
         exit(-1);
     }
 
     //going inside
-    while ((entry = readdir(dir)) != NULL){
+    while ((entry =readdir(dir)) != NULL){
+
 
 
         //do not go there
@@ -41,6 +44,7 @@ void showMeWhatYouGot(char* path, char* text){
         }
 
         //directory
+        
         if (S_ISDIR(sb.st_mode)){
 
             pid_t saveFork = fork();
@@ -51,7 +55,8 @@ void showMeWhatYouGot(char* path, char* text){
             }
 
             if (saveFork == 0){ //it's a child
-                fflush(stdout); //writing buffer 
+                wait(NULL);
+                //fflush(stdout); //writing buffer 
                 showMeWhatYouGot(filePath, text);
                 exit(EXIT_SUCCESS);
 
@@ -75,19 +80,21 @@ void showMeWhatYouGot(char* path, char* text){
 
             if (strncmp(buffer, text, strlen(text)) == 0){ //comparing char by char and they're the same
                 printf("Filepath: %s, PID: %d\n", filePath, getpid());
-                fflush(stdout); //writing buff
+                //fflush(stdout); //writing buff
             }
             fclose(openedFile);
         }
 
 
     }
-    fflush(stdout);
+    
+
+    //fflush(stdout);
     if (closedir(dir) == -1){
         perror("closedir");
         exit(-1);
     }
-    closedir(dir);
+
     return;
 }
 
@@ -103,9 +110,8 @@ int main(int argc, char** argv){
         exit(-1);
     }
 
-    fflush(stdout);
+    setbuf(stdout, NULL);
     showMeWhatYouGot(argv[1], argv[2]);
-    wait(NULL);
     return 0;
 
 }
