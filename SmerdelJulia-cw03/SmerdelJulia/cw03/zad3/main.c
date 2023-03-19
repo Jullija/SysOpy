@@ -15,15 +15,13 @@ void showMeWhatYouGot(char* path, char* text){
     struct dirent* entry;
     struct stat sb;
 
-    dir = opendir(path); //opening directory
-    if (dir == NULL){
+    if ((dir = opendir(path)) == NULL){
         perror("opendir");
         exit(-1);
     }
 
     //going inside
-    while ((entry =readdir(dir)) != NULL){
-
+    while ((entry = readdir(dir)) != NULL){
 
 
         //do not go there
