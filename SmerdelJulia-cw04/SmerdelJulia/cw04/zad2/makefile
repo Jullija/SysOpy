@@ -1,18 +1,14 @@
-CC = gcc
-CFLAGS = -Wall -pedantic
-SRC = main.c
-
 all:
-	$(CC) $(CFLAGS) $(SRC) -o main
-	# $(CC) $(CFLAGS) child.c -o child
+	make clean
+	make onions
+	make test
+
+
+onions:
+	gcc -Wall main.c -o main
 
 clean:
-	rm -f main child
-	make cleanTxt
-
-cleanTxt:
-	rm -f *.txt
+	rm -f *.o *.txt
 
 test:
-	make clean
-	make
+	./main > report.txt

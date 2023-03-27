@@ -2,37 +2,37 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <signal.h>
+#include <sys/types.h>
 
 #define MAX_MODES 5
 
-pid_t catcher_pid;
+pid_t catcherPID;
 
-void handler(int sig, siginfo_t *si, void * unimportant){
-    if (sig == SIGUSR1) {
-        printf("Sendef: Received conformation from catcher with PID %d\n", si->si_pid);
+void handler(int signal, siginfo_t *si, void * GingerbreadMan){
+    if (signal == SIGUSR1) {
+        printf("Sender: Received confirmation from catcher with PID %d\n, we are there. Yet!", si->si_pid);
         fflush(stdout);
     }
-    if (sig == SIGINT){
-        printf("Sender: catcher ended its work, terminating sender\n");
+    if (signal == SIGINT){
+        printf("Sender: Catcher caught everything, autodestruction in 3.. 2.. 1..\n");
     }
 }
 
 
 
-void send_signal(int mode){
-    printf("Sender: Sending signal with mode %d to catcher with PID %d\n", mode, catcher_pid);
+void sendSignal(int mode){
+    printf("Sender: Sending signal with mode %d to catcher with PID %d\n", mode, catcherPID);
     fflush(stdout);
     union sigval val;
     val.sival_int = mode;
-    sigqueue(catcher_pid, SIGUSR1, val);
+    sigqueue(catcherPID, SIGUSR1, val);
 }
 
-void wait_for_confirmation(){
-    sigset_t mask;
-    sigemptyset(&mask);
-    // sigaddset(&mask, SIGUSR1);
-    sigsuspend(&mask);
-    // sleep(2);
+void waitForConfirmation(){
+    sigset_t set;
+    sigemptyset(&set);
+    sigsuspend(&set);
+
 }
 
 int main(int argc, char **argv){
@@ -41,9 +41,9 @@ int main(int argc, char **argv){
         return 1;
     }
 
-    catcher_pid = atoi(argv[1]);
+    catcherPID = atoi(argv[1]);
 
-    if (catcher_pid <= 0){
+    if (catcherPID<= 0){
         printf("Sender: Invalid catcher PID\n");
         return 1;
     }
@@ -58,12 +58,12 @@ int main(int argc, char **argv){
         int mode = atoi(argv[i]);
 
         if (mode < 1 || mode > MAX_MODES){
-            printf("Sendef: Invalid mode: %d\n", mode);
+            printf("Sender: Invalid mode: %d\n", mode);
             continue;
         }
 
-        send_signal(mode);
-        wait_for_confirmation();
+        sendSignal(mode);
+        waitForConfirmation();
 
     }
 }
