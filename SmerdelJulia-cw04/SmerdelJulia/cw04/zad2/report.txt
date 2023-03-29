@@ -1,12 +1,12 @@
 
 Testing SIGINFO flag:
-Sending signal from child pid = === 202187
-Received signal 10 from process with PID 202187
+Sending signal from child pid = === 212498
+Received signal 10 from process with PID 212498
 Uid === 1000
 Status == 0
 Value ===: -6
-Sending signal from parent with pid === 202186
-Received signal 10 from process with PID 202186
+Sending signal from parent with pid === 212497
+Received signal 10 from process with PID 212497
 Uid === 1000
 Status == 0
 Value ===: -6
@@ -16,11 +16,11 @@ Testing signal START! ID: 0, onionLayer/depth 0
 Testing signal START! ID: 1, onionLayer/depth 1
 Testing signal START! ID: 2, onionLayer/depth 2
 Testing signal START! ID: 3, onionLayer/depth 3
-testing signal END! ID 4, onionLayer/depth 3
-testing signal END! ID 4, onionLayer/depth 2
-testing signal END! ID 4, onionLayer/depth 1
-testing signal END! ID 4, onionLayer/depth 0
+Testing signal END! ID 4, onionLayer/depth 3
+Testing signal END! ID 4, onionLayer/depth 2
+Testing signal END! ID 4, onionLayer/depth 1
+Testing signal END! ID 4, onionLayer/depth 0
 
 Testing SA_RESETHAND flag:
 Testing signal START! ID: 0, onionLayer/depth 0
-testing signal END! ID 1, onionLayer/depth 0
+Testing signal END! ID 1, onionLayer/depth 0
