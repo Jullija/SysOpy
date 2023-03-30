@@ -1,4 +1,10 @@
 all:
+	make clean
+	make MichaelScott
+
+MichaelScott:
 	gcc -Wall main.c -o main
-	./main parallels@localhost test test
-	./main nadawca
+	./main
+
+clean:
+	rm -f *.o 
