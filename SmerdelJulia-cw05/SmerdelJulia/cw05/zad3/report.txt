@@ -1,0 +1,5 @@
+RecWidth: 0.000100
+Number of processes: 10
+Final answer: 131344840724780279615245516800.000000
+Time: 0.000408
+
