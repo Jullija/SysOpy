@@ -39,6 +39,12 @@ int main(int argc, char** argv){
     char buff[4096]="";
     size_t size = snprintf(buff, 4096, "%lf\n", res);
     int fifOpen = open(PATHNAME, O_WRONLY);
+
+    if (fifOpen == -1){
+        printf("Error opening fifo");
+        exit(-1);
+    }
+
     write(fifOpen, buff, size); //writing to fifOpen what was in res
     close(fifOpen);
     return 0;

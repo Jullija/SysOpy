@@ -44,6 +44,10 @@ int main(int argc, char** argv){
     }
 
     int fifOpen = open(PATHNAME, O_RDONLY); //will be reading data from this
+    if (fifOpen == -1){
+        printf("Error opening fifo");
+        exit(-1);
+    }
     //adding everything together
     double finalCountdown = 0.0;
 
@@ -56,18 +60,15 @@ int main(int argc, char** argv){
         char* smallResult;
         smallResult = strtok(buff, "\n");
         
-        for(;smallResult; smallResult = strtok(NULL, "\n")){
+        for(;smallResult;){
             finalCountdown += atof(smallResult);
+            smallResult = strtok(NULL, "\n");
             curr += 1;
         }
             
         
 
     }
-
-
-    
-
     close(fifOpen);
 
 

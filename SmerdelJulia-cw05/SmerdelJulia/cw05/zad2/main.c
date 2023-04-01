@@ -45,7 +45,10 @@ int main(int argc, char** argv){
             double startPoint = i * step;
             double endPoint = (i+1) * step;
             double res = integral(recWidth, startPoint, endPoint);
-            write(fd[1], &res, sizeof(double));//now write the res into fd[1]
+            if(write(fd[1], &res, sizeof(double)) == -1){//now write the res into fd[1]
+                printf("Error writing");
+                exit(-1);
+            };
             
             exit(0);
         }
@@ -62,7 +65,10 @@ int main(int argc, char** argv){
     double finalCountdown = 0.0;
     for(int i = 0; i < n; i++){
         double result;
-        read(pipes[i], &result, sizeof(double));
+        if(read(pipes[i], &result, sizeof(double)) == -1){
+            printf("Error readig");
+            exit(-1);
+        };
         finalCountdown += result;
     }
     
