@@ -8,14 +8,14 @@ dwight:
 	gcc -Wall child.c -o child
 
 clean:
-	rm -f *.o *.txt
+	rm -f *.o *.txt child main
 
 test:
-	./main 0.0001 10 > report.txt
-	# ./main 0.000001 10 >> report.txt
-	# ./main 0.001 1 >> report.txt
-	# ./main 0.001 10 >> report.txt
-	# ./main 0.01 1 >> report.txt
-	# ./main 0.01 10 >> report.txt
+	./main 0.000001 1 > report.txt
+	./main 0.000001 10 >> report.txt
+	./main 0.001 1 >> report.txt
+	./main 0.001 10 >> report.txt
+	./main 0.01 1 >> report.txt
+	./main 0.01 10 >> report.txt
 
 	

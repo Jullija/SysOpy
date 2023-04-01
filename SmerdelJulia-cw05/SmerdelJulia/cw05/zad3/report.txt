@@ -1,5 +1,30 @@
-RecWidth: 0.000100
+RecWidth: 0.000001
+Number of processes: 1
+Final answer: 3.141594
+Time: 0.000194
+
+RecWidth: 0.000001
 Number of processes: 10
-Final answer: 131344840724780279615245516800.000000
-Time: 0.000408
+Final answer: 3.141605
+Time: 0.003058
+
+RecWidth: 0.001000
+Number of processes: 1
+Final answer: 3.142592
+Time: 0.000302
+
+RecWidth: 0.001000
+Number of processes: 10
+Final answer: 3.142592
+Time: 0.002915
+
+RecWidth: 0.010000
+Number of processes: 1
+Final answer: 3.151576
+Time: 0.000267
+
+RecWidth: 0.010000
+Number of processes: 10
+Final answer: 3.191182
+Time: 0.003469
 

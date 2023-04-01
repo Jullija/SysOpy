@@ -1,11 +1,6 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/wait.h>
-#include <time.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 #include <fcntl.h>
 
 #define PATHNAME "path_for_ex3"
@@ -38,10 +33,13 @@ int main(int argc, char** argv){
 
     double res = integral(recWidth, startPoint, endPoint);
 
+
+    
+
+    char buff[4096]="";
+    size_t size = snprintf(buff, 4096, "%lf\n", res);
     int fifOpen = open(PATHNAME, O_WRONLY);
-
-
-    write(fifOpen, &res, sizeof(double)); //writing to fifOpen what was in res
+    write(fifOpen, buff, size); //writing to fifOpen what was in res
     close(fifOpen);
     return 0;
 

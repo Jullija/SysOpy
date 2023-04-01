@@ -43,42 +43,34 @@ int main(int argc, char** argv){
         
     }
 
-    // double result = 0.0;
-    // int fifo = open(PATHNAME, O_RDONLY);
-    // int already_read = 0;
-    // char read_buff[4096] = "";
-    // while (already_read < n) {
-    //     size_t size = read(fifo, read_buff, 4096);
-    //     read_buff[size] = 0;
-
-    //     char delim[] = "\n";
-    //     char* token;
-
-    //     token = strtok(read_buff, delim);
-    //     for (;token; token = strtok(NULL, delim)) {
-    //         result += strtod(token, NULL);
-    //         already_read++;
-    //     }
-    // }
-    // close(fifo);
-
-
-
-    //while(wait(NULL) > 0);
-
     int fifOpen = open(PATHNAME, O_RDONLY); //will be reading data from this
     //adding everything together
-    double arr[n];
     double finalCountdown = 0.0;
-    for(int i = 0; i < n; i++){
-        wait(NULL);
-        read(fifOpen, &arr[i], sizeof(double));
+
+    int curr = 0;
+    char buff[4096]="";
+    while (curr < n){
+        size_t size = read(fifOpen, buff, 4096);
+        buff[size] = 0;
+        
+        char* smallResult;
+        smallResult = strtok(buff, "\n");
+        
+        for(;smallResult; smallResult = strtok(NULL, "\n")){
+            finalCountdown += atof(smallResult);
+            curr += 1;
+        }
+            
+        
+
     }
+
+
+    
+
     close(fifOpen);
 
-    for(int i = 0; i < n; i++){
-        finalCountdown += arr[i];
-    }
+
     
 
     clock_t IHaveHeartAttack = clock();
