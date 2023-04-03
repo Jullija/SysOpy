@@ -17,5 +17,7 @@ test:
 	./main 0.001 10 >> report.txt
 	./main 0.01 1 >> report.txt
 	./main 0.01 10 >> report.txt
+	./main 0.000000001 150 >> report.txt
+	./main 0.000000001 300 >> report.txt
 
 	

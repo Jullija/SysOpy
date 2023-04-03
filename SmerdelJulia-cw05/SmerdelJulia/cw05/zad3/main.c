@@ -7,10 +7,23 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <sys/times.h>
 
 #define PATHNAME "path_for_ex3"
 
+struct timespec realStart, realEnd;
 
+void readySteadyGo(){
+    clock_gettime(CLOCK_REALTIME, &realStart);
+}
+void IHaveHeartAttack(){
+    clock_gettime(CLOCK_REALTIME, &realEnd);
+}
+double newWorldRecord(){
+    double i = (double)(realEnd.tv_sec - realStart.tv_sec);
+    double r = (double)(realEnd.tv_nsec - realStart.tv_nsec)/1e9;
+    return i+r;
+}
 
 int main(int argc, char** argv){
     if (argc != 3){
@@ -22,7 +35,7 @@ int main(int argc, char** argv){
     int n = atoi(argv[2]); //how many programs
     double step = 1.0/n;
 
-    clock_t readySteadyGo = clock();
+    readySteadyGo();
 
     mkfifo(PATHNAME, 0777); //creating a pip; 0777 permissions 
 
@@ -72,11 +85,9 @@ int main(int argc, char** argv){
     close(fifOpen);
 
 
-    
+    IHaveHeartAttack();
 
-    clock_t IHaveHeartAttack = clock();
-    double newWorldRecord = (double)(IHaveHeartAttack - readySteadyGo)/(CLOCKS_PER_SEC);
-    printf("RecWidth: %lf\nNumber of processes: %d\nFinal answer: %lf\nTime: %lf\n\n", recWidth, n, finalCountdown, newWorldRecord);
+    printf("RecWidth: %.10lf\nNumber of processes: %d\nFinal answer: %lf\nTime: %lf\n\n", recWidth, n, finalCountdown, newWorldRecord());
 
 
     return 0;

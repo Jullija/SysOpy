@@ -4,6 +4,24 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <time.h>
+#include <sys/times.h>
+
+struct timespec realStart, realEnd;
+
+void readySteadyGo(){
+    clock_gettime(CLOCK_REALTIME, &realStart);
+}
+void IHaveHeartAttack(){
+    clock_gettime(CLOCK_REALTIME, &realEnd);
+}
+double newWorldRecord(){
+    double i = (double)(realEnd.tv_sec - realStart.tv_sec);
+    double r = (double)(realEnd.tv_nsec - realStart.tv_nsec)/1e9;
+    return i+r;
+}
+
+
+
 
 
 double function(double x){
@@ -33,7 +51,7 @@ int main(int argc, char** argv){
 
     int* pipes = calloc(n, sizeof(int));
 
-    clock_t readySteadyGo = clock();
+    readySteadyGo();
 
     for (int i = 0; i < n; i++){
         int fd[2];
@@ -74,9 +92,8 @@ int main(int argc, char** argv){
     
     free(pipes);
 
-    clock_t IHaveHeartAttack = clock();
-    double newWorldRecord = (double)(IHaveHeartAttack - readySteadyGo)/(CLOCKS_PER_SEC);
-    printf("RecWidth: %lf\nNumber of processes: %d\nFinal answer: %lf\nTime: %lf\n\n", recWidth, n, finalCountdown, newWorldRecord);
+    IHaveHeartAttack();
+    printf("RecWidth: %.10lf\nNumber of processes: %d\nFinal answer: %lf\nTime: %lf\n\n", recWidth, n, finalCountdown, newWorldRecord());
 
 
     return 0;
