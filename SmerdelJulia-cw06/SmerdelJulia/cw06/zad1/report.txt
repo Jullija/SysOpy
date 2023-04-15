@@ -1,89 +1,77 @@
-2023-04-15 22:45:23
+2023-04-15 22:51:18
 Client id: 0
 Message type: 5
 Message body:
-'167903234'
+'-1828585470'
 
-2023-04-15 22:45:27
+2023-04-15 22:51:21
 Client id: 0
 Message type: 5
 Message body:
-'973209602'
+'-1207828478'
 
-2023-04-15 22:45:55
+2023-04-15 22:51:34
 Client id: 0
 Message type: 4
 Message body:
 'Mamo spisz?'
 
-2023-04-15 22:46:03
+2023-04-15 22:52:11
 Client id: 1
 Message type: 4
 Message body:
 'Spie, bo co?'
 
-2023-04-15 22:46:12
+2023-04-15 22:52:19
 Client id: 0
 Message type: 4
 Message body:
 'Bo ja nie moge.'
 
-2023-04-15 22:46:19
+2023-04-15 22:52:25
 Client id: 1
 Message type: 4
 Message body:
 'Co znowu?'
 
-2023-04-15 22:46:35
+2023-04-15 22:52:44
 Client id: 0
-Message type: 4
+Message type: 3
 Message body:
-'Mamo, bo ja nie moge zrozumiec jednej rzeczy, co mn przrzesladuje.'
+'Mamo, bo ja nie moge zrozumiec jednej rzeczy, co mnie przesladuje.'
 
-2023-04-15 22:46:44
+2023-04-15 22:52:53
 Client id: 1
 Message type: 3
 Message body:
 'Niby czego?'
 
-2023-04-15 22:47:04
+2023-04-15 22:53:11
 Client id: 0
 Message type: 3
 Message body:
 'Dlaczego te SysOpy to takie trudne i czasochlonne sa?'
 
-2023-04-15 22:47:29
+2023-04-15 22:53:46
 Client id: 1
 Message type: 3
 Message body:
 'Wiesz co? Ty nudna jestes. Ty mnie o to codziennie pytasz, od poczatku semestru.'
 
-2023-04-15 22:48:29
+2023-04-15 22:54:16
 Client id: 0
-Message type: 3
+Message type: 4
 Message body:
-'Mamo, bo ja od poczatku semestru pojac nie moge, po co w ogole takie cos uczelnia stworzyla.'
+'Mamo, bo ja od poczatku semestru pojac nie moge, po co w ogole takie cos uczeia stworzyzyla.'
 
-2023-04-15 22:48:33
-Client id: 0
-Message type: 1
-Message body:
-''
-
-2023-04-15 22:48:33
-Client id: 0
-Message type: 1
-Message body:
-''
-
-2023-04-15 22:48:34
+2023-04-15 22:54:19
 Client id: 1
 Message type: 1
 Message body:
 ''
 
-2023-04-15 22:48:34
-Client id: 1
+2023-04-15 22:54:21
+Client id: 0
 Message type: 1
 Message body:
 ''
