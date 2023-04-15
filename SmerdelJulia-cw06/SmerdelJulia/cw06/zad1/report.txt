@@ -1,0 +1,90 @@
+2023-04-15 22:45:23
+Client id: 0
+Message type: 5
+Message body:
+'167903234'
+
+2023-04-15 22:45:27
+Client id: 0
+Message type: 5
+Message body:
+'973209602'
+
+2023-04-15 22:45:55
+Client id: 0
+Message type: 4
+Message body:
+'Mamo spisz?'
+
+2023-04-15 22:46:03
+Client id: 1
+Message type: 4
+Message body:
+'Spie, bo co?'
+
+2023-04-15 22:46:12
+Client id: 0
+Message type: 4
+Message body:
+'Bo ja nie moge.'
+
+2023-04-15 22:46:19
+Client id: 1
+Message type: 4
+Message body:
+'Co znowu?'
+
+2023-04-15 22:46:35
+Client id: 0
+Message type: 4
+Message body:
+'Mamo, bo ja nie moge zrozumiec jednej rzeczy, co mn przrzesladuje.'
+
+2023-04-15 22:46:44
+Client id: 1
+Message type: 3
+Message body:
+'Niby czego?'
+
+2023-04-15 22:47:04
+Client id: 0
+Message type: 3
+Message body:
+'Dlaczego te SysOpy to takie trudne i czasochlonne sa?'
+
+2023-04-15 22:47:29
+Client id: 1
+Message type: 3
+Message body:
+'Wiesz co? Ty nudna jestes. Ty mnie o to codziennie pytasz, od poczatku semestru.'
+
+2023-04-15 22:48:29
+Client id: 0
+Message type: 3
+Message body:
+'Mamo, bo ja od poczatku semestru pojac nie moge, po co w ogole takie cos uczelnia stworzyla.'
+
+2023-04-15 22:48:33
+Client id: 0
+Message type: 1
+Message body:
+''
+
+2023-04-15 22:48:33
+Client id: 0
+Message type: 1
+Message body:
+''
+
+2023-04-15 22:48:34
+Client id: 1
+Message type: 1
+Message body:
+''
+
+2023-04-15 22:48:34
+Client id: 1
+Message type: 1
+Message body:
+''
+
