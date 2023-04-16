@@ -1,0 +1,6 @@
+2023-04-16 19:12:04
+Client id: 0
+Message type: 5
+Message body:
+'/parallels6746'
+
