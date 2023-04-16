@@ -1,6 +1,42 @@
-2023-04-16 19:12:04
+2023-04-16 20:10:52
 Client id: 0
 Message type: 5
 Message body:
-'/parallels6746'
+'/julia4873'
+
+2023-04-16 20:11:02
+Client id: 0
+Message type: 5
+Message body:
+'/julia4889'
+
+2023-04-16 20:11:14
+Client id: 0
+Message type: 4
+Message body:
+'puk puk'
+
+2023-04-16 20:11:35
+Client id: 1
+Message type: 3
+Message body:
+'kto tam'
+
+2023-04-16 20:11:45
+Client id: 0
+Message type: 3
+Message body:
+'hipopotam'
+
+2023-04-16 20:11:47
+Client id: 0
+Message type: 1
+Message body:
+'(null)'
+
+2023-04-16 20:11:51
+Client id: 1
+Message type: 1
+Message body:
+'(null)'
 
