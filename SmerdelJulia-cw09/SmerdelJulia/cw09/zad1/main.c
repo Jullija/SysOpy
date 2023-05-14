@@ -72,10 +72,15 @@ void *reindeer(void *arg) {
             printf("Renifer: wybudzam Mikołaja, %lu\n", reindeerID);
             pthread_cond_signal(&santaCondition);
         }
+        
+        while (elvesWaiting > 0){
+            pthread_cond_wait(&elvesCondition, &santaMutex);
+        }
 
         while (reindeersWaiting > 0){
             pthread_cond_wait(&reindeersCondition, &santaMutex);
         }
+
         pthread_mutex_unlock(&santaMutex);
 
     }
