@@ -1,0 +1,11 @@
+## OPERATING SYSTEM COURSE
+- [Memory allocation, libraries](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw01/SmerdelJulia/cw01)
+- [Files](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw02/SmerdelJulia/cw02)
+- [Processes](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw03/SmerdelJulia/cw03)
+- [Signals](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw04/SmerdelJulia/cw04)
+- [Pipes](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw05/SmerdelJulia/cw05)
+- [IPC - queues](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw06/SmerdelJulia/cw06)
+- [IPC - semaphores, shared memory](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw07/SmerdelJulia/cw07)
+- [Threads](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw08/SmerdelJulia/cw08)
+- [Mutexes](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw09)
+- [Sockets](https://github.com/Jullija/SysOpy/tree/main/SmerdelJulia-cw10/SmerdelJulia/cw10)
